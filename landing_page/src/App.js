@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import firebase from "firebase";
-import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"; 
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth ' 
 
 class App extends Component{
   state = { 
@@ -21,11 +21,6 @@ class App extends Component{
     }
   }
 
-  // componentDidMount = () => {
-  //   firebase.auth().onAuthStateChange(user => {
-  //     this.setState ({isSignedIn})
-  //   })
-  // }
 
   render() {
     return (
