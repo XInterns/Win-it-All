@@ -1,0 +1,6 @@
+.sidebar-one{
+    background-color: red;
+    flex:1;
+    border: 2px solid white;
+    padding:10px;
+}
