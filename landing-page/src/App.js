@@ -1,45 +1,17 @@
-import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
-import firebase from "firebase";
-import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"; 
+import React from 'react'
 
-class App extends Component{
-  state = { 
-    isSignedIn: false,
-  }
-
-  uiConfig = {
-    signInFlow: "popup",
-    signInOptions: [
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      firebase.auth.EmailAuthProvider.PROVIDER_ID
-    ],
-
-    callbacks: {
-      signInSuccess: () => false
-    }
-  }
-
-  // componentDidMount = () => {
-  //   firebase.auth().onAuthStateChange(user => {
-  //     this.setState ({isSignedIn})
-  //   })
-  // }
-
-  render() {
+function Heading() {
     return (
-      <div className="App">
-        {this.state.isSignedIn ? (
-          <div>Signed In!!</div>
-        ):(
-        <div>Not Signed In!!</div>)
-        }
-      </div>
+        <div class="Heading">
+            <h3 class="Heading__title Fz($ml) Fw($bold) Fs(i) Tt(u) Mb(16px) Mt(20px)">
+                <span>Get started</span>
+            </h3>
+             <div class="Heading__subtitle Fz($ms) C($c-secondary)">
+             <div class=""></div>
+              </div>
+        </div>
+        
     )
-  }
-  
 }
 
-
-export default App;
+export default Heading;
